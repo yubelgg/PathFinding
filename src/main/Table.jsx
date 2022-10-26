@@ -77,9 +77,17 @@ export default class CreateTable extends Component {
 
     return (
       <>
-        <button onClick={() => this.visualizeDijkstra()}>
-          Visualize Dijkstra's Algorithm
-        </button>
+        <div className="header">
+          <button onClick={() => this.visualizeDijkstra()}>
+            Visualize Dijkstra's Algorithm
+          </button>
+          <p>
+            <span className="green">Green</span> is start,
+            <span className="red"> Red</span> is end
+          </p>
+          <p>Hold down mouse button to create walls</p>
+          <p>Hit f5 / refresh page to reset and randomize positions</p>
+        </div>
         <div className="grid">
           {grid.map((row, rowIdx) => {
             return (

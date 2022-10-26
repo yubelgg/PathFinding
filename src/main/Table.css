@@ -1,7 +1,19 @@
 .grid {
-  margin: 50px 0 0;
+  margin: 25px 0 0;
 }
 
 button {
   font-size: 2rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+body {
+  background-color: #e8dacc;
 }
